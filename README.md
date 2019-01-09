@@ -7,12 +7,14 @@ function formatSeconds(sec) {
             .join(":");
 }
 ```
-## Or
+#### Or
 ```js
 d=(s)=>{f=Math.floor;g=(n)=>('00'+n).slice(-2);return f(s/3600)+':'+g(f(s/60)%60)+':'+g(s%60)}
 ```
 
-# paint items of collection with random colors
+
+
+# Paint items of collection with random colors
 ```js
 function colorCollection(collection) {
     collection.forEach(element => {
@@ -23,7 +25,8 @@ function colorCollection(collection) {
 ```
 
 
-# 2 dimential array  (rowsCount = first dimention count)
+
+# Two dimential array  (rowsCount = first dimention count)
 ```javascript  
 for (i = 0; i < rowsCount -1; i++) { arr[i] = []};
 ```
