@@ -23,7 +23,7 @@ function colorCollection(collection) {
     });
 }
 ```
-####Or (create a random color)
+#### Or (create a random color)
 ```
 div.style.background = '#' + Math.random().toString(16).slice(-6)
 ```
