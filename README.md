@@ -23,6 +23,10 @@ function colorCollection(collection) {
     });
 }
 ```
+####Or (create a random color)
+```
+div.style.background = '#' + Math.random().toString(16).slice(-6)
+```
 
 
 
@@ -30,3 +34,4 @@ function colorCollection(collection) {
 ```javascript  
 for (i = 0; i < rowsCount -1; i++) { arr[i] = []};
 ```
+
