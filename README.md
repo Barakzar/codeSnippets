@@ -12,7 +12,9 @@ function formatSeconds(sec) {
 d=(s)=>{f=Math.floor;g=(n)=>('00'+n).slice(-2);return f(s/3600)+':'+g(f(s/60)%60)+':'+g(s%60)}
 ```
 
-
+```javascript
+parseInt(getComputedStyle(div).border)
+```
 
 # Paint items of collection with random colors
 ```js
@@ -35,3 +37,15 @@ div.style.background = '#' + Math.random().toString(16).slice(-6)
 for (i = 0; i < rowsCount -1; i++) { arr[i] = []};
 ```
 
+# Find  width / height / coordinations
+```javascript
+div.getBoundingClientRect() // Relativ to the window  x = left, y = top, bottom = top+height, right = left+width.
+div.getBoundingClientRect() + pageXOffset//pageYOffset   //Relativ to the document/
+document.elementFromPoint(x, y)  // Return the most nested element in window cordinate(x, y)
+
+div.clientHeight / div.clientWidth // Height / width of the element (without border)
+div.clientLeft / div.clientTop // width of the border.
+
+div.offsetHeight / div.offsetWidth // height / width of the element (with border !)
+div.offsetLeft / div.offsetTop // Distance from top/left of the --div.offsetparent--.
+```
