@@ -49,3 +49,12 @@ div.clientLeft / div.clientTop // width of the border.
 div.offsetHeight / div.offsetWidth // height / width of the element (with border !)
 div.offsetLeft / div.offsetTop // Distance from top/left of the --div.offsetparent--.
 ```
+# css - create tappet by repeating-radial-gradient and border
+```css
+div {
+    width: 20px;
+    height: 20px;
+    background-image: repeating-radial-gradient(red,red 3px,darkred 3px, darkred 6px); 
+    border: 40px solid transparent;
+}
+```
